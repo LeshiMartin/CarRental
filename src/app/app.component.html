@@ -1,0 +1,14 @@
+<mat-toolbar-row class="p-0">
+  <app-nav-bar (btnClick)="leftBodyOpen = !leftBodyOpen"></app-nav-bar>
+</mat-toolbar-row>
+<div class="row  h-93 bg-light">
+  <div class="left-body bg-dark h-100" [ngClass]="{'left-body-expand':leftBodyOpen}">
+    <app-side-bar></app-side-bar>
+  </div>
+  <div class="main-body p-1 w-auto">
+    <div class="bg-white">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+</div>

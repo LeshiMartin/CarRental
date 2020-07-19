@@ -1,0 +1,32 @@
+<mat-toolbar class="p-0 bg-white">
+    <div class="row">
+        <div class="col-md-1">
+            <button class="btn no-hover h-100" (click)="btnClick.emit()">
+                <mat-icon>dehaze</mat-icon>
+            </button>
+
+        </div>
+        <div class="col-md-11">
+            <div class="float-right mr-2">
+                <div class="m-0 dropdown">
+                    <div class="dropdown-header flex justify-content-between">
+                        <mat-icon>
+                            person
+                        </mat-icon>
+                        <span class="ml-1 mr-1">
+                            User
+                        </span>
+                        <button class="btn dropdown-toggle no-hover"> </button>
+                    </div>
+                    <div class="dropdown-menu">
+                            <div class="dropdown-item">
+                                <a class="dropdown-item" [routerLink]="[ '/authetication' ]">Login</a>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</mat-toolbar>

@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import './assets/styles/colors';
+@import './assets/styles/sizes';
+@import './assets/styles/dropdown';
+
+html,
+body {
+  height: 100%;
+  width: 99%;
+}
+.btn{
+    display: flex;
+}
+.no-hover:hover,
+.no-hover:active,
+.no-hover:focus{
+    background-color: initial !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.left-body{
+    @extend .w-3;
+    transition: width 0.5s linear;
+}
+.left-body-expand{
+    @extend .w-7;
+}
+.flex{
+    display: flex !important;
+}

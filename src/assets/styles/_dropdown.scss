@@ -1,0 +1,16 @@
+.dropdown-menu {
+  .dropdown-item:active {
+    display: none !important;
+  }
+
+}
+
+
+
+.dropdown:focus-within,
+.dropdown:focus {
+  .dropdown-menu {
+    display: block !important;
+    left: -50px;
+  }
+}
